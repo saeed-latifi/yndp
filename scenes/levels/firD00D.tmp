@@ -1,0 +1,55 @@
+[gd_scene load_steps=10 format=3 uid="uid://di6yxkbpwsgwe"]
+
+[ext_resource type="Script" path="res://scripts/level.gd" id="1_uvert"]
+[ext_resource type="PackedScene" uid="uid://dmi7nn0fhf162" path="res://component/platforms/p_one.tscn" id="6_uaix2"]
+[ext_resource type="PackedScene" uid="uid://da1pty63rplb7" path="res://scenes/character.tscn" id="7_r32pn"]
+[ext_resource type="PackedScene" uid="uid://sxdoirrrqib8" path="res://component/ui/hud.tscn" id="8_l1fam"]
+[ext_resource type="PackedScene" uid="uid://cd63ehuo0nbkl" path="res://component/ui/pause_menu.tscn" id="9_8mro1"]
+[ext_resource type="PackedScene" uid="uid://cl3m5jj1joj8r" path="res://component/ui/lose.tscn" id="11_gset4"]
+[ext_resource type="PackedScene" uid="uid://b3lq6oajntcxi" path="res://component/ui/win.tscn" id="12_ah5pq"]
+
+[sub_resource type="Gradient" id="Gradient_uwsxl"]
+offsets = PackedFloat32Array(0, 0.535948, 0.591503, 1)
+colors = PackedColorArray(0.65, 0.561817, 0.4095, 1, 0.929412, 0.803922, 0.584314, 1, 0.87451, 0.352941, 0.705882, 1, 0.403922, 1, 1, 1)
+
+[sub_resource type="GradientTexture2D" id="GradientTexture2D_a3l7p"]
+gradient = SubResource("Gradient_uwsxl")
+fill_from = Vector2(0, 1)
+fill_to = Vector2(0, 0)
+
+[node name="level" type="Node2D"]
+process_mode = 3
+script = ExtResource("1_uvert")
+
+[node name="Camera2D" type="Camera2D" parent="."]
+anchor_mode = 0
+zoom = Vector2(0.76, 0.76)
+limit_bottom = 1080
+limit_smoothed = true
+metadata/_edit_lock_ = true
+
+[node name="bg color" type="CanvasLayer" parent="."]
+layer = -1
+
+[node name="TextureRect" type="TextureRect" parent="bg color"]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = SubResource("GradientTexture2D_a3l7p")
+
+[node name="HUD" parent="." instance=ExtResource("8_l1fam")]
+
+[node name="pause_menu" parent="." instance=ExtResource("9_8mro1")]
+
+[node name="lose_menu" parent="." instance=ExtResource("11_gset4")]
+
+[node name="win_menu" parent="." instance=ExtResource("12_ah5pq")]
+
+[node name="StaticBody2D" parent="." instance=ExtResource("6_uaix2")]
+position = Vector2(2, 822)
+scale = Vector2(1.8, 1)
+
+[node name="character" parent="." instance=ExtResource("7_r32pn")]
+position = Vector2(44, 579)

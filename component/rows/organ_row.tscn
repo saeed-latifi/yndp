@@ -1,0 +1,15 @@
+[gd_scene load_steps=10 format=3 uid="uid://bks2vmeso66bd"]
+
+[ext_resource type="Script" path="res://scripts/organ-row.gd" id="1_dya5e"]
+[ext_resource type="Texture2D" uid="uid://ctx43fa3c2wsf" path="res://assets/graphics/face/Eyes/A.png" id="2_ls200"]
+[ext_resource type="Texture2D" uid="uid://bwcyrkg2sllof" path="res://assets/graphics/face/Eyes/B.png" id="3_dv4b8"]
+[ext_resource type="Texture2D" uid="uid://0ikn6l7c7d55" path="res://assets/graphics/face/Eyes/C.png" id="4_cfacw"]
+[ext_resource type="Texture2D" uid="uid://bpv6fy00x3qki" path="res://assets/graphics/face/Eyes/D.png" id="5_cd2t0"]
+[ext_resource type="Texture2D" uid="uid://blhs8kueeusrg" path="res://assets/graphics/face/Eyes/E.png" id="6_ocsp0"]
+[ext_resource type="Texture2D" uid="uid://buh2o5y0frxsk" path="res://assets/graphics/face/Eyes/F.png" id="7_5vlkr"]
+[ext_resource type="Texture2D" uid="uid://1ipwwkry8aju" path="res://assets/graphics/face/Eyes/G.png" id="8_sdv4i"]
+[ext_resource type="Texture2D" uid="uid://b12v7er5xode8" path="res://assets/graphics/face/Eyes/H.png" id="9_enr0x"]
+
+[node name="row" type="Node2D"]
+script = ExtResource("1_dya5e")
+sprite_arrays = Array[Texture2D]([ExtResource("2_ls200"), ExtResource("3_dv4b8"), ExtResource("4_cfacw"), ExtResource("5_cd2t0"), ExtResource("6_ocsp0"), ExtResource("7_5vlkr"), ExtResource("8_sdv4i"), ExtResource("9_enr0x")])

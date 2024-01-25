@@ -1,0 +1,33 @@
+[gd_scene load_steps=2 format=3 uid="uid://bo77saf22l1pj"]
+
+[sub_resource type="GDScript" id="GDScript_ynj55"]
+script/source = "@tool
+
+class_name organs_row
+extends Marker2D
+
+var is_down = true
+@export var min_poss = 0
+@export var max_poss = 1000
+@export var change_value = 10
+var poss = (max_poss - min_poss)/2
+
+
+func _process(delta):
+	if is_down :
+		if poss < max_poss:
+			poss += change_value
+			position.y += change_value
+		else: 
+			is_down  = not is_down
+	else :
+		if poss > min_poss:
+			poss -= change_value
+			position.y -= change_value
+		else: 
+			is_down  = not is_down
+"
+
+[node name="row" type="Marker2D"]
+position = Vector2(0, 630)
+script = SubResource("GDScript_ynj55")
