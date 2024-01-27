@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://dwa4lu4gt2yn3"
-path="res://.godot/imported/F.png-e4a7e2f3f980c42b3d8841d65c38ca09.ctex"
+uid="uid://mw88i8ltl884"
+path="res://.godot/imported/T.png-82314f927b831fe6b4a461949d5011a9.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/graphics/face/Eyes/Single/F.png"
-dest_files=["res://.godot/imported/F.png-e4a7e2f3f980c42b3d8841d65c38ca09.ctex"]
+source_file="res://assets/graphics/face/Eyes/T.png"
+dest_files=["res://.godot/imported/T.png-82314f927b831fe6b4a461949d5011a9.ctex"]
 
 [params]
 

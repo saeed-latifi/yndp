@@ -1,6 +1,7 @@
-[gd_scene load_steps=2 format=3 uid="uid://b3lq6oajntcxi"]
+[gd_scene load_steps=3 format=3 uid="uid://b3lq6oajntcxi"]
 
 [ext_resource type="Script" path="res://scripts/win_menu.gd" id="1_3lq06"]
+[ext_resource type="Texture2D" uid="uid://b6u64ctc0yw7d" path="res://assets/graphics/WIN.png" id="2_o2g83"]
 
 [node name="win_menu" type="CanvasLayer"]
 process_mode = 3
@@ -27,6 +28,7 @@ grow_vertical = 2
 alignment = 1
 
 [node name="Label" type="Label" parent="VBoxContainer2"]
+visible = false
 layout_mode = 2
 theme_override_colors/font_color = Color(0.87451, 0.156863, 0, 1)
 theme_override_font_sizes/font_size = 50
@@ -35,7 +37,7 @@ horizontal_alignment = 1
 vertical_alignment = 1
 
 [node name="VSplitContainer" type="VSplitContainer" parent="VBoxContainer2"]
-custom_minimum_size = Vector2(0, 700)
+custom_minimum_size = Vector2(0, 900)
 layout_mode = 2
 
 [node name="VBoxContainer" type="HBoxContainer" parent="VBoxContainer2"]
@@ -58,6 +60,11 @@ layout_mode = 2
 theme_override_font_sizes/font_size = 30
 text = "play again
 "
+
+[node name="Sprite2D" type="Sprite2D" parent="VBoxContainer2"]
+position = Vector2(208, 104)
+scale = Vector2(0.7, 0.7)
+texture = ExtResource("2_o2g83")
 
 [connection signal="pressed" from="VBoxContainer2/VBoxContainer/main" to="." method="_on_main_pressed"]
 [connection signal="pressed" from="VBoxContainer2/VBoxContainer/re_start" to="." method="_on_re_start_pressed"]

@@ -1,97 +1,33 @@
-[gd_scene load_steps=4 format=3 uid="uid://sxdoirrrqib8"]
+[gd_scene load_steps=8 format=3 uid="uid://sxdoirrrqib8"]
 
 [ext_resource type="Script" path="res://scripts/hud.gd" id="1_mn6m2"]
 [ext_resource type="Texture2D" uid="uid://mot7w6axvkvb" path="res://assets/graphics/grear-icon.svg" id="2_e6agb"]
+[ext_resource type="Texture2D" uid="uid://yppc5eb53o4a" path="res://assets/graphics/button.png" id="3_k5m2e"]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_kcpdt"]
 radius = 270.0
 
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_2mr2o"]
+radius = 80.0
+height = 300.0
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_21ybi"]
+radius = 80.0
+height = 700.0
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_hlqub"]
+radius = 80.0
+height = 300.0
+
 [node name="HUD" type="CanvasLayer"]
 script = ExtResource("1_mn6m2")
 
-[node name="MarginContainer" type="MarginContainer" parent="."]
-anchors_preset = 15
-anchor_right = 1.0
-anchor_bottom = 1.0
-grow_horizontal = 2
-grow_vertical = 2
-theme_override_constants/margin_left = 20
-theme_override_constants/margin_top = 20
-theme_override_constants/margin_right = 20
-theme_override_constants/margin_bottom = 20
-
-[node name="VBoxContainer" type="VBoxContainer" parent="MarginContainer"]
-visible = false
-layout_mode = 2
-
-[node name="HBoxContainer" type="HBoxContainer" parent="MarginContainer/VBoxContainer"]
-layout_mode = 2
-alignment = 1
-
-[node name="point_label" type="Label" parent="MarginContainer/VBoxContainer/HBoxContainer"]
-layout_mode = 2
-theme_override_font_sizes/font_size = 30
-text = "points : "
-
-[node name="point_value" type="Label" parent="MarginContainer/VBoxContainer/HBoxContainer"]
-layout_mode = 2
-theme_override_font_sizes/font_size = 30
-text = "654"
-
-[node name="HSplitContainer" type="HSplitContainer" parent="MarginContainer/VBoxContainer/HBoxContainer"]
-layout_mode = 2
-size_flags_horizontal = 3
-
-[node name="goal_label" type="Label" parent="MarginContainer/VBoxContainer/HBoxContainer"]
-layout_mode = 2
-theme_override_font_sizes/font_size = 30
-text = "goal point : "
-
-[node name="goal_value" type="Label" parent="MarginContainer/VBoxContainer/HBoxContainer"]
-layout_mode = 2
-theme_override_font_sizes/font_size = 30
-
-[node name="HSplitContainer3" type="HSplitContainer" parent="MarginContainer/VBoxContainer/HBoxContainer"]
-custom_minimum_size = Vector2(50, 0)
-layout_mode = 2
-
-[node name="best_labe" type="Label" parent="MarginContainer/VBoxContainer/HBoxContainer"]
-layout_mode = 2
-theme_override_font_sizes/font_size = 30
-text = "your best score : "
-
-[node name="best_value" type="Label" parent="MarginContainer/VBoxContainer/HBoxContainer"]
-layout_mode = 2
-theme_override_font_sizes/font_size = 30
-
-[node name="HSplitContainer2" type="HSplitContainer" parent="MarginContainer/VBoxContainer/HBoxContainer"]
-layout_mode = 2
-size_flags_horizontal = 3
-
-[node name="life_label" type="Label" parent="MarginContainer/VBoxContainer/HBoxContainer"]
-layout_mode = 2
-theme_override_font_sizes/font_size = 30
-text = "lifes : "
-horizontal_alignment = 2
-
-[node name="life_value" type="Label" parent="MarginContainer/VBoxContainer/HBoxContainer"]
-layout_mode = 2
-theme_override_font_sizes/font_size = 30
-text = "6"
-
-[node name="VSplitContainer" type="VSplitContainer" parent="MarginContainer/VBoxContainer"]
-layout_mode = 2
-size_flags_vertical = 3
-
-[node name="HBoxContainer2" type="HBoxContainer" parent="MarginContainer/VBoxContainer"]
-layout_mode = 2
-
-[node name="Sprite2D" type="Sprite2D" parent="MarginContainer/VBoxContainer/HBoxContainer2"]
-position = Vector2(50, -50)
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(70, 70)
 scale = Vector2(0.2, 0.2)
 texture = ExtResource("2_e6agb")
 
-[node name="setting_button" type="Button" parent="MarginContainer/VBoxContainer/HBoxContainer2/Sprite2D"]
+[node name="setting_button" type="Button" parent="Sprite2D"]
 visible = false
 custom_minimum_size = Vector2(100, 100)
 anchors_preset = 15
@@ -106,8 +42,155 @@ grow_vertical = 2
 theme_override_colors/icon_normal_color = Color(1, 0.388235, 0.603922, 1)
 flat = true
 
-[node name="TouchScreenButton" type="TouchScreenButton" parent="MarginContainer/VBoxContainer/HBoxContainer2/Sprite2D"]
+[node name="TouchScreenButton" type="TouchScreenButton" parent="Sprite2D"]
 shape = SubResource("CircleShape2D_kcpdt")
 
-[connection signal="pressed" from="MarginContainer/VBoxContainer/HBoxContainer2/Sprite2D/setting_button" to="." method="_on_setting_button_pressed"]
-[connection signal="pressed" from="MarginContainer/VBoxContainer/HBoxContainer2/Sprite2D/TouchScreenButton" to="." method="_on_setting_button_pressed"]
+[node name="VBoxContainer" type="VBoxContainer" parent="."]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+alignment = 2
+
+[node name="HBoxContainer" type="HBoxContainer" parent="VBoxContainer"]
+layout_mode = 2
+size_flags_stretch_ratio = 0.1
+alignment = 1
+
+[node name="brake" type="PanelContainer" parent="VBoxContainer/HBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 4
+
+[node name="Sprite2D3" type="Sprite2D" parent="VBoxContainer/HBoxContainer/brake"]
+position = Vector2(160, 0)
+texture = ExtResource("3_k5m2e")
+
+[node name="setting_button" type="Button" parent="VBoxContainer/HBoxContainer/brake"]
+visible = false
+custom_minimum_size = Vector2(100, 100)
+layout_mode = 2
+theme_override_colors/icon_normal_color = Color(1, 0.388235, 0.603922, 1)
+flat = true
+
+[node name="brake_key" type="TouchScreenButton" parent="VBoxContainer/HBoxContainer/brake"]
+position = Vector2(160, 0)
+rotation = 1.5708
+shape = SubResource("CapsuleShape2D_2mr2o")
+
+[node name="Marker2D" type="Marker2D" parent="VBoxContainer/HBoxContainer/brake"]
+position = Vector2(160, 0)
+
+[node name="Label2" type="Label" parent="VBoxContainer/HBoxContainer/brake/Marker2D"]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+size_flags_horizontal = 4
+theme_override_font_sizes/font_size = 70
+text = "brake"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="HSplitContainer" type="HSplitContainer" parent="VBoxContainer/HBoxContainer"]
+custom_minimum_size = Vector2(700, 0)
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="jump" type="PanelContainer" parent="VBoxContainer/HBoxContainer"]
+layout_mode = 2
+
+[node name="Sprite2D2" type="Sprite2D" parent="VBoxContainer/HBoxContainer/jump"]
+texture = ExtResource("3_k5m2e")
+
+[node name="setting_button" type="Button" parent="VBoxContainer/HBoxContainer/jump"]
+visible = false
+custom_minimum_size = Vector2(100, 100)
+layout_mode = 2
+theme_override_colors/icon_normal_color = Color(1, 0.388235, 0.603922, 1)
+flat = true
+
+[node name="jump_key" type="TouchScreenButton" parent="VBoxContainer/HBoxContainer/jump"]
+rotation = 1.5708
+shape = SubResource("CapsuleShape2D_21ybi")
+
+[node name="Marker2D" type="Marker2D" parent="VBoxContainer/HBoxContainer/jump"]
+
+[node name="Label" type="Label" parent="VBoxContainer/HBoxContainer/jump/Marker2D"]
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -62.5
+offset_top = -34.5
+offset_right = 62.5
+offset_bottom = 34.5
+grow_horizontal = 2
+grow_vertical = 2
+size_flags_horizontal = 4
+theme_override_font_sizes/font_size = 70
+text = "jump"
+horizontal_alignment = 1
+vertical_alignment = 1
+metadata/_edit_use_anchors_ = true
+
+[node name="HSplitContainer2" type="HSplitContainer" parent="VBoxContainer/HBoxContainer"]
+custom_minimum_size = Vector2(700, 0)
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 0
+
+[node name="PanelContainer2" type="PanelContainer" parent="VBoxContainer/HBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 4
+
+[node name="Sprite2D" type="Sprite2D" parent="VBoxContainer/HBoxContainer/PanelContainer2"]
+position = Vector2(-170, 0)
+texture = ExtResource("3_k5m2e")
+
+[node name="TouchScreenButton" type="TouchScreenButton" parent="VBoxContainer/HBoxContainer/PanelContainer2"]
+position = Vector2(-170, 0)
+rotation = 1.5708
+shape = SubResource("CapsuleShape2D_hlqub")
+
+[node name="setting_button" type="Button" parent="VBoxContainer/HBoxContainer/PanelContainer2"]
+visible = false
+custom_minimum_size = Vector2(100, 100)
+layout_mode = 2
+theme_override_colors/icon_normal_color = Color(1, 0.388235, 0.603922, 1)
+flat = true
+
+[node name="Marker2D" type="Marker2D" parent="VBoxContainer/HBoxContainer/PanelContainer2"]
+position = Vector2(-170, 0)
+
+[node name="Label" type="Label" parent="VBoxContainer/HBoxContainer/PanelContainer2/Marker2D"]
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -62.5
+offset_top = -34.5
+offset_right = 62.5
+offset_bottom = 34.5
+grow_horizontal = 2
+grow_vertical = 2
+size_flags_horizontal = 4
+theme_override_font_sizes/font_size = 70
+text = "boost"
+horizontal_alignment = 1
+vertical_alignment = 1
+metadata/_edit_use_anchors_ = true
+
+[node name="VSplitContainer" type="VSplitContainer" parent="VBoxContainer"]
+custom_minimum_size = Vector2(0, 90)
+layout_mode = 2
+
+[connection signal="pressed" from="Sprite2D/setting_button" to="." method="_on_setting_button_pressed"]
+[connection signal="pressed" from="Sprite2D/TouchScreenButton" to="." method="_on_setting_button_pressed"]
