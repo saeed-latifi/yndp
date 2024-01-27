@@ -8,6 +8,7 @@ visible = false
 script = ExtResource("1_3lq06")
 
 [node name="ColorRect" type="ColorRect" parent="."]
+visible = false
 anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
@@ -27,13 +28,14 @@ alignment = 1
 
 [node name="Label" type="Label" parent="VBoxContainer2"]
 layout_mode = 2
+theme_override_colors/font_color = Color(0.87451, 0.156863, 0, 1)
 theme_override_font_sizes/font_size = 50
-text = "you win"
+text = "its your next dream partner"
 horizontal_alignment = 1
 vertical_alignment = 1
 
 [node name="VSplitContainer" type="VSplitContainer" parent="VBoxContainer2"]
-custom_minimum_size = Vector2(0, 30)
+custom_minimum_size = Vector2(0, 700)
 layout_mode = 2
 
 [node name="VBoxContainer" type="HBoxContainer" parent="VBoxContainer2"]
@@ -54,7 +56,7 @@ layout_mode = 2
 custom_minimum_size = Vector2(200, 0)
 layout_mode = 2
 theme_override_font_sizes/font_size = 30
-text = "next level
+text = "play again
 "
 
 [connection signal="pressed" from="VBoxContainer2/VBoxContainer/main" to="." method="_on_main_pressed"]

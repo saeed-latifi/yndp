@@ -1,6 +1,7 @@
-[gd_scene load_steps=2 format=3 uid="uid://di107vwst8ws6"]
+[gd_scene load_steps=3 format=3 uid="uid://di107vwst8ws6"]
 
 [ext_resource type="Script" path="res://scripts/main_menu.gd" id="1_jy3yw"]
+[ext_resource type="Texture2D" uid="uid://dyuj4jujbrwyb" path="res://assets/graphics/main.jpg" id="2_k412c"]
 
 [node name="Node2D" type="Control"]
 process_mode = 3
@@ -13,6 +14,24 @@ grow_vertical = 2
 size_flags_horizontal = 4
 size_flags_vertical = 4
 script = ExtResource("1_jy3yw")
+
+[node name="TextureRect" type="TextureRect" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("2_k412c")
+
+[node name="ColorRect" type="ColorRect" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0, 0, 0, 0.176471)
 
 [node name="BoxContainer" type="BoxContainer" parent="."]
 layout_mode = 1
@@ -41,6 +60,7 @@ theme_override_font_sizes/font_size = 30
 text = "new game"
 
 [node name="continue" type="Button" parent="BoxContainer/VBoxContainer/HBoxContainer"]
+visible = false
 custom_minimum_size = Vector2(180, 80)
 layout_mode = 2
 theme_override_font_sizes/font_size = 30

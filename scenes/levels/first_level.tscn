@@ -1,50 +1,118 @@
-[gd_scene load_steps=39 format=3 uid="uid://di6yxkbpwsgwe"]
+[gd_scene load_steps=112 format=3 uid="uid://di6yxkbpwsgwe"]
 
 [ext_resource type="Script" path="res://scripts/level.gd" id="1_uvert"]
+[ext_resource type="Texture2D" uid="uid://dqv57xbhfxig7" path="res://assets/graphics/environoment/lanscape.jpg" id="2_1gua5"]
 [ext_resource type="PackedScene" uid="uid://dmi7nn0fhf162" path="res://component/platforms/p_one.tscn" id="6_uaix2"]
+[ext_resource type="Texture2D" uid="uid://0rlpetrtwxmq" path="res://assets/graphics/environoment/Ears.png" id="7_1atef"]
 [ext_resource type="PackedScene" uid="uid://da1pty63rplb7" path="res://component/ball.tscn" id="7_r32pn"]
+[ext_resource type="Texture2D" uid="uid://cod5j5mb46vcg" path="res://assets/graphics/environoment/Mouth.png" id="8_4quwn"]
 [ext_resource type="PackedScene" uid="uid://sxdoirrrqib8" path="res://component/ui/hud.tscn" id="8_l1fam"]
+[ext_resource type="Texture2D" uid="uid://b2r2j6pnx01m4" path="res://assets/graphics/environoment/Eyes.png" id="8_uwj2i"]
 [ext_resource type="PackedScene" uid="uid://cd63ehuo0nbkl" path="res://component/ui/pause_menu.tscn" id="9_8mro1"]
+[ext_resource type="Texture2D" uid="uid://b10d0avqgf0vq" path="res://assets/graphics/environoment/Hair.png" id="10_4mca5"]
 [ext_resource type="PackedScene" uid="uid://cl3m5jj1joj8r" path="res://component/ui/lose.tscn" id="11_gset4"]
+[ext_resource type="Texture2D" uid="uid://cfreufj1x51uk" path="res://assets/graphics/environoment/Mustache.png" id="12_6kbq5"]
 [ext_resource type="PackedScene" uid="uid://b3lq6oajntcxi" path="res://component/ui/win.tscn" id="12_ah5pq"]
 [ext_resource type="Script" path="res://scripts/organ-row.gd" id="15_6ld0b"]
-[ext_resource type="Texture2D" uid="uid://c4t7bxlsnxp4b" path="res://assets/graphics/face/Nose/A.png" id="16_lkfr8"]
-[ext_resource type="Texture2D" uid="uid://cwb6nuj3dxxh2" path="res://assets/graphics/face/Nose/B.png" id="17_5t8t4"]
-[ext_resource type="Texture2D" uid="uid://dlfa4jgr7vja" path="res://assets/graphics/face/Nose/C.png" id="18_x0rbq"]
-[ext_resource type="Texture2D" uid="uid://dywkfasyihmve" path="res://assets/graphics/face/Nose/D.png" id="19_qod1j"]
-[ext_resource type="Texture2D" uid="uid://b8h4eef2whivm" path="res://assets/graphics/face/Nose/E.png" id="20_v4sae"]
-[ext_resource type="Texture2D" uid="uid://cdmjjkexbygy8" path="res://assets/graphics/face/Nose/F.png" id="21_g0pu3"]
-[ext_resource type="Texture2D" uid="uid://bg4p2nxhikamy" path="res://assets/graphics/face/Nose/G.png" id="22_vnfes"]
+[ext_resource type="Texture2D" uid="uid://bwd38m40kqg2p" path="res://assets/graphics/face/Nose/H.png" id="16_547j7"]
+[ext_resource type="Texture2D" uid="uid://bivgrmabcr8ew" path="res://assets/graphics/face/Nose/A.png" id="16_lkfr8"]
+[ext_resource type="Texture2D" uid="uid://cdkb4ph0rqiq3" path="res://assets/graphics/face/Nose/I.png" id="17_1tk76"]
+[ext_resource type="Texture2D" uid="uid://kp86vkpxarl" path="res://assets/graphics/face/Nose/B.png" id="17_5t8t4"]
+[ext_resource type="Texture2D" uid="uid://ctwpapcv1qsbg" path="res://assets/graphics/face/Nose/J.png" id="18_elku8"]
+[ext_resource type="Texture2D" uid="uid://cvcfe6r5gks86" path="res://assets/graphics/face/Nose/C.png" id="18_x0rbq"]
+[ext_resource type="Texture2D" uid="uid://5b4yi0r36q2q" path="res://assets/graphics/face/Nose/K.png" id="19_oixq3"]
+[ext_resource type="Texture2D" uid="uid://c808fnfdbq04a" path="res://assets/graphics/face/Nose/D.png" id="19_qod1j"]
+[ext_resource type="AudioStream" uid="uid://da5f3vujhic08" path="res://assets/audio/Meme/a-a-and-you-fail.wav" id="20_jncb7"]
+[ext_resource type="Texture2D" uid="uid://cub6ny1pdx0a6" path="res://assets/graphics/face/Nose/E.png" id="20_v4sae"]
+[ext_resource type="Texture2D" uid="uid://qk4wycg50ssk" path="res://assets/graphics/face/Nose/F.png" id="21_g0pu3"]
+[ext_resource type="Texture2D" uid="uid://c43udpi6m5l3f" path="res://assets/graphics/face/Nose/G.png" id="22_vnfes"]
 [ext_resource type="AudioStream" uid="uid://ba18kg7k6ajs1" path="res://assets/audio/Meme/damn-youre-ugly.wav" id="23_g2lgv"]
-[ext_resource type="Texture2D" uid="uid://ctx43fa3c2wsf" path="res://assets/graphics/face/Eyes/A.png" id="23_nyyfk"]
-[ext_resource type="Texture2D" uid="uid://bwcyrkg2sllof" path="res://assets/graphics/face/Eyes/B.png" id="24_3qntf"]
 [ext_resource type="AudioStream" uid="uid://c21mye4c08hhh" path="res://assets/audio/Meme/dj-stop.wav" id="24_5hs6q"]
 [ext_resource type="AudioStream" uid="uid://br36kwqc3sea4" path="res://assets/audio/Meme/emotional-damage-meme.wav" id="25_ajlpb"]
-[ext_resource type="Texture2D" uid="uid://0ikn6l7c7d55" path="res://assets/graphics/face/Eyes/C.png" id="25_foytw"]
 [ext_resource type="AudioStream" uid="uid://cuhqdhnk0cd8c" path="res://assets/audio/Meme/god-dammit-augghhh.wav" id="26_meglc"]
-[ext_resource type="Texture2D" uid="uid://bpv6fy00x3qki" path="res://assets/graphics/face/Eyes/D.png" id="26_r4804"]
 [ext_resource type="AudioStream" uid="uid://y67dm2yc5j4l" path="res://assets/audio/Meme/klonk.wav" id="27_sqto1"]
-[ext_resource type="Texture2D" uid="uid://blhs8kueeusrg" path="res://assets/graphics/face/Eyes/E.png" id="27_yg7hh"]
 [ext_resource type="AudioStream" uid="uid://b5xr077y3chbu" path="res://assets/audio/Meme/lol_ZtLafxH.wav" id="28_2htv7"]
-[ext_resource type="Texture2D" uid="uid://buh2o5y0frxsk" path="res://assets/graphics/face/Eyes/F.png" id="28_7gja6"]
 [ext_resource type="AudioStream" uid="uid://b46f7vaof0van" path="res://assets/audio/Meme/meme_lgkJmX6.wav" id="29_fcru6"]
-[ext_resource type="Texture2D" uid="uid://1ipwwkry8aju" path="res://assets/graphics/face/Eyes/G.png" id="29_oiy2h"]
-[ext_resource type="Texture2D" uid="uid://b12v7er5xode8" path="res://assets/graphics/face/Eyes/H.png" id="30_f8sb4"]
 [ext_resource type="AudioStream" uid="uid://dndshmr6ag627" path="res://assets/audio/Meme/ae-meme.wav" id="31_8lxe4"]
 [ext_resource type="AudioStream" uid="uid://bsv2rr11abetm" path="res://assets/audio/Meme/anime-wow-sound-effect-mp3cut.wav" id="32_bwi52"]
 [ext_resource type="AudioStream" uid="uid://b6mnitochj4lo" path="res://assets/audio/Meme/areyousureaboutthat.wav" id="33_wu2xf"]
+[ext_resource type="AudioStream" uid="uid://c0at6hwtwfx1r" path="res://assets/audio/Meme/mk3-04245.wav" id="34_iki54"]
 [ext_resource type="AudioStream" uid="uid://tu8wwlw4oo37" path="res://assets/audio/Meme/auughhh.wav" id="34_kwvrg"]
 [ext_resource type="AudioStream" uid="uid://bm0rqxkhtati1" path="res://assets/audio/Meme/awkward-moment.wav" id="35_6se1p"]
+[ext_resource type="AudioStream" uid="uid://bl64bmdpodtmo" path="res://assets/audio/Meme/movie_1_C2K5NH0.wav" id="35_b3lej"]
 [ext_resource type="AudioStream" uid="uid://bxs6vrs5a13h1" path="res://assets/audio/Meme/banana_D4qerZj.wav" id="36_n6fxi"]
+[ext_resource type="AudioStream" uid="uid://bw8823igh4faj" path="res://assets/audio/Meme/noot-noot_2.wav" id="36_q6a51"]
+[ext_resource type="AudioStream" uid="uid://d367cpc8isim7" path="res://assets/audio/Meme/oh-hell-no_aQX7VTp.wav" id="37_pljab"]
+[ext_resource type="AudioStream" uid="uid://dkbro374la8iq" path="res://assets/audio/Meme/oh-ma-gaud-vine.wav" id="38_xi8ty"]
+[ext_resource type="AudioStream" uid="uid://c07mg3xqe070w" path="res://assets/audio/Meme/oh-my-god-meme.wav" id="39_21ff3"]
+[ext_resource type="AudioStream" uid="uid://7a3b7ah1wrws" path="res://assets/audio/Meme/okay-meme.wav" id="40_1bsew"]
+[ext_resource type="AudioStream" uid="uid://cxsmutgo0y5nh" path="res://assets/audio/Meme/punch-gaming-sound-effect-hd_RzlG1GE.wav" id="41_7txd3"]
+[ext_resource type="AudioStream" uid="uid://d1gf3buk618ak" path="res://assets/audio/Meme/quack-meme.wav" id="42_nwyp4"]
+[ext_resource type="AudioStream" uid="uid://dxnhqvvgbn0bp" path="res://assets/audio/Meme/roblox-death-sound_1_7QU3n8P.wav" id="43_5pjv1"]
+[ext_resource type="AudioStream" uid="uid://dkx88jpp61056" path="res://assets/audio/Meme/sabe-porque-as-meninas-dao-maior-valor-na-risada-de-ladrao-mp3cut.wav" id="44_4771i"]
+[ext_resource type="AudioStream" uid="uid://b3httb7jffset" path="res://assets/audio/Meme/savetweetvid_tadwtrm1nizoqxxv.wav" id="45_iao1r"]
+[ext_resource type="AudioStream" uid="uid://dvc3agcm1qkyw" path="res://assets/audio/Meme/shocked-sound-effect.wav" id="46_mjall"]
+[ext_resource type="AudioStream" uid="uid://c3qgeahr4712p" path="res://assets/audio/Meme/skull-trumpet.wav" id="47_a7hlx"]
+[ext_resource type="AudioStream" uid="uid://djykourme751w" path="res://assets/audio/Meme/videoplayback_y6EZG5Z.wav" id="48_wfjhn"]
+[ext_resource type="AudioStream" uid="uid://cplpsv2xqry0l" path="res://assets/audio/Meme/what_JOcN7Y8.wav" id="49_80opj"]
+[ext_resource type="Texture2D" uid="uid://dtgxi03cyvgik" path="res://assets/graphics/face/Eears/A.png" id="50_hwvd4"]
+[ext_resource type="Texture2D" uid="uid://dwicviyd41paw" path="res://assets/graphics/face/Eyes/Single/A.png" id="50_tinff"]
+[ext_resource type="Texture2D" uid="uid://ce7yupieiu7iu" path="res://assets/graphics/face/Eyes/Single/B.png" id="51_j6huu"]
+[ext_resource type="Texture2D" uid="uid://cy706k5bul5ft" path="res://assets/graphics/face/Head/8pa.png" id="51_kpw41"]
+[ext_resource type="Texture2D" uid="uid://coen0uev12gut" path="res://assets/graphics/face/Eears/B.png" id="51_vf24h"]
+[ext_resource type="Texture2D" uid="uid://bfs1lvlknu35r" path="res://assets/graphics/face/Eears/C.png" id="52_iarvi"]
+[ext_resource type="Texture2D" uid="uid://chkvhnli6eeep" path="res://assets/graphics/face/Eyes/Single/C.png" id="52_uh51a"]
+[ext_resource type="Texture2D" uid="uid://bf7i606ia2tnx" path="res://assets/graphics/face/Eyes/Single/D.png" id="53_bbkwc"]
+[ext_resource type="Texture2D" uid="uid://bb2b12b13ykfu" path="res://assets/graphics/face/Eears/D.png" id="53_rmw25"]
+[ext_resource type="Texture2D" uid="uid://c7klw41awx6ij" path="res://assets/graphics/face/Eears/E.png" id="54_rpcdt"]
+[ext_resource type="Texture2D" uid="uid://ctboyvlkp2nsi" path="res://assets/graphics/face/Eyes/Single/E.png" id="54_s6hym"]
+[ext_resource type="Texture2D" uid="uid://dxdysg44knifw" path="res://assets/graphics/face/Mouth/A.png" id="55_7ty52"]
+[ext_resource type="Texture2D" uid="uid://bhjgpft1i6rvv" path="res://assets/graphics/face/Head/mars.png" id="55_abjpf"]
+[ext_resource type="Texture2D" uid="uid://dwa4lu4gt2yn3" path="res://assets/graphics/face/Eyes/Single/F.png" id="55_l85rm"]
+[ext_resource type="Texture2D" uid="uid://biypqsmpa230a" path="res://assets/graphics/face/Head/pashm.png" id="56_iut7g"]
+[ext_resource type="Texture2D" uid="uid://doqj2u74jhoxy" path="res://assets/graphics/face/Mouth/B.png" id="56_iywge"]
+[ext_resource type="Texture2D" uid="uid://b15cau6vxplw0" path="res://assets/graphics/face/Eyes/Single/G.png" id="56_v2jhk"]
+[ext_resource type="Texture2D" uid="uid://dcsmvupubeax3" path="res://assets/graphics/face/Mouth/C.png" id="57_exqut"]
+[ext_resource type="Texture2D" uid="uid://bt2ek6kc02fma" path="res://assets/graphics/face/Eyes/Single/H.png" id="57_ohhti"]
+[ext_resource type="Texture2D" uid="uid://bfa0boowjy4b0" path="res://assets/graphics/face/Head/sib.png" id="57_uqn12"]
+[ext_resource type="Texture2D" uid="uid://dre2xxnjf23y1" path="res://assets/graphics/face/Mouth/D.png" id="58_4fglv"]
+[ext_resource type="Texture2D" uid="uid://coxrceijohr5h" path="res://assets/graphics/face/Eyes/Single/I.png" id="58_d4ihd"]
+[ext_resource type="Texture2D" uid="uid://bs7auv0jg0kas" path="res://assets/graphics/face/Eyes/Single/J.png" id="59_eom53"]
+[ext_resource type="Texture2D" uid="uid://iltsi3j5tlbv" path="res://assets/graphics/face/Mouth/E.png" id="59_kyice"]
+[ext_resource type="Texture2D" uid="uid://dj7g0rnvy5mym" path="res://assets/graphics/face/Eyes/Single/K.png" id="60_a82nu"]
+[ext_resource type="Texture2D" uid="uid://bpm1q8rf4lpm4" path="res://assets/graphics/face/Mouth/F.png" id="60_ukuf6"]
+[ext_resource type="Texture2D" uid="uid://dgbthosu4hbbi" path="res://assets/graphics/face/Mouth/G.png" id="61_6scw5"]
+[ext_resource type="Texture2D" uid="uid://d0x8wvkxpibrk" path="res://assets/graphics/face/Eyes/Single/L.png" id="61_8rdmn"]
+[ext_resource type="Texture2D" uid="uid://bik262ovgecpt" path="res://assets/graphics/face/Mouth/H.png" id="62_0jnur"]
+[ext_resource type="Texture2D" uid="uid://bg24vvqry62df" path="res://assets/graphics/face/Eyes/Single/M.png" id="62_w5bj7"]
+[ext_resource type="Texture2D" uid="uid://cho7x5s177x6j" path="res://assets/graphics/face/Eyes/Single/N.png" id="63_hkt2y"]
+[ext_resource type="Texture2D" uid="uid://comsjgqscbbdx" path="res://assets/graphics/face/Mouth/I.png" id="63_tjpf7"]
+[ext_resource type="Texture2D" uid="uid://bstup0qhwsosi" path="res://assets/graphics/face/Eyes/Single/O.png" id="64_5p581"]
+[ext_resource type="Texture2D" uid="uid://cela6kpgfm4gq" path="res://assets/graphics/face/Mouth/J.png" id="64_ftght"]
+[ext_resource type="Texture2D" uid="uid://fn8xcp52kayn" path="res://assets/graphics/face/Mouth/k.png" id="65_lvkd3"]
+[ext_resource type="Texture2D" uid="uid://dbhl6rv48t62t" path="res://assets/graphics/face/Mouth/l.png" id="66_6u45j"]
+[ext_resource type="Texture2D" uid="uid://cnk8qrj0y1j7s" path="res://assets/graphics/face/Mouth/M.png" id="67_2aent"]
+[ext_resource type="Texture2D" uid="uid://bhyl31af7bvgf" path="res://assets/graphics/face/Mouth/N.png" id="68_t5f4h"]
+[ext_resource type="Texture2D" uid="uid://bim2hnxgcmsk7" path="res://assets/graphics/face/Hair/A.png" id="84_b5bje"]
+[ext_resource type="Texture2D" uid="uid://u7oeog4g527y" path="res://assets/graphics/face/Hair/B.png" id="85_s57vn"]
+[ext_resource type="Texture2D" uid="uid://bcwels83hxflr" path="res://assets/graphics/face/Hair/C.png" id="86_pbhmo"]
+[ext_resource type="Texture2D" uid="uid://csbwb77flvl7l" path="res://assets/graphics/face/Hair/D.png" id="87_2cxjs"]
+[ext_resource type="Texture2D" uid="uid://dt1q5p28dexd" path="res://assets/graphics/face/Hair/E.png" id="88_ul7h3"]
+[ext_resource type="Texture2D" uid="uid://q42v5oawq6qk" path="res://assets/graphics/face/Hair/F.png" id="89_h0qwv"]
+[ext_resource type="Texture2D" uid="uid://q4yymceyedy6" path="res://assets/graphics/face/Hair/G.png" id="90_jl8cr"]
+[ext_resource type="Texture2D" uid="uid://jcpfhwhtovon" path="res://assets/graphics/face/Mustash/A.png" id="91_c1niw"]
+[ext_resource type="Texture2D" uid="uid://dqqwedvuqys21" path="res://assets/graphics/face/Mustash/B.png" id="92_7e6o5"]
+[ext_resource type="Texture2D" uid="uid://vtfkskx8a5y1" path="res://assets/graphics/face/Mustash/C.png" id="93_f6dqa"]
+[ext_resource type="Texture2D" uid="uid://fr16rnkl11be" path="res://assets/graphics/face/Mustash/D.png" id="94_jjpb2"]
+[ext_resource type="Texture2D" uid="uid://c35v8epoy6mj6" path="res://assets/graphics/face/Mustash/E.png" id="95_rrqur"]
+[ext_resource type="Texture2D" uid="uid://javftimrhwae" path="res://assets/graphics/face/Mustash/F.png" id="96_8xywx"]
+[ext_resource type="Texture2D" uid="uid://b8bo5sgmm1aef" path="res://assets/graphics/face/Mustash/G.png" id="97_0ow1g"]
+[ext_resource type="Texture2D" uid="uid://dyxjukrlnigo0" path="res://assets/graphics/face/Head/B.png" id="99_1fn52"]
+[ext_resource type="Texture2D" uid="uid://c8rye1d7frs1e" path="res://assets/graphics/face/Head/face.png" id="100_t2uvg"]
+[ext_resource type="AudioStream" uid="uid://ow8e5qao3sym" path="res://assets/audio/Super Mario Bros. Theme Song Rubber Chicken Cover_2.wav" id="110_had3t"]
 
-[sub_resource type="Gradient" id="Gradient_uwsxl"]
-offsets = PackedFloat32Array(0, 0.535948, 0.591503, 1)
-colors = PackedColorArray(0.65, 0.561817, 0.4095, 1, 0.929412, 0.803922, 0.584314, 1, 0.87451, 0.352941, 0.705882, 1, 0.403922, 1, 1, 1)
-
-[sub_resource type="GradientTexture2D" id="GradientTexture2D_a3l7p"]
-gradient = SubResource("Gradient_uwsxl")
-fill_from = Vector2(0, 1)
-fill_to = Vector2(0, 0)
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_64ev7"]
+size = Vector2(76.5, 2020)
 
 [node name="level" type="Node2D"]
 process_mode = 3
@@ -59,9 +127,10 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
-texture = SubResource("GradientTexture2D_a3l7p")
+texture = ExtResource("2_1gua5")
 
 [node name="HUD" parent="." instance=ExtResource("8_l1fam")]
+visible = false
 
 [node name="pause_menu" parent="." instance=ExtResource("9_8mro1")]
 
@@ -69,44 +138,160 @@ texture = SubResource("GradientTexture2D_a3l7p")
 
 [node name="win_menu" parent="." instance=ExtResource("12_ah5pq")]
 
+[node name="element back" type="Node2D" parent="."]
+
+[node name="ear" type="Sprite2D" parent="element back"]
+position = Vector2(2823, 288)
+scale = Vector2(0.518235, 0.518235)
+texture = ExtResource("7_1atef")
+
+[node name="mounth" type="Sprite2D" parent="element back"]
+position = Vector2(13649, 1231)
+scale = Vector2(0.481565, 0.481565)
+texture = ExtResource("8_4quwn")
+
 [node name="platform_one" parent="." instance=ExtResource("6_uaix2")]
-position = Vector2(4741, 586)
+position = Vector2(11969, 1937)
+scale = Vector2(2.88, 3.16)
+
+[node name="element fromt" type="Node2D" parent="."]
+
+[node name="eye" type="Sprite2D" parent="element fromt"]
+position = Vector2(17488, 32)
+scale = Vector2(0.569249, 0.459008)
+texture = ExtResource("8_uwj2i")
+
+[node name="hair" type="Sprite2D" parent="element fromt"]
+position = Vector2(7317, 977)
+scale = Vector2(0.47993, 0.47993)
+texture = ExtResource("10_4mca5")
+
+[node name="sibil" type="Sprite2D" parent="element fromt"]
+position = Vector2(11049, 1247)
+scale = Vector2(0.839, 0.7)
+texture = ExtResource("12_6kbq5")
 
 [node name="organs" type="Node2D" parent="."]
 position = Vector2(1059, 412)
 
 [node name="character" parent="." instance=ExtResource("7_r32pn")]
 position = Vector2(44, 579)
+metadata/_edit_lock_ = true
 
 [node name="Camera2D" type="Camera2D" parent="character"]
-position = Vector2(-44, -579)
-offset = Vector2(-400, -400)
-anchor_mode = 0
-zoom = Vector2(0.34, 0.34)
+zoom = Vector2(0.7, 0.7)
 limit_smoothed = true
 metadata/_edit_lock_ = true
 
 [node name="rows" type="Node2D" parent="."]
 
-[node name="OrgansRow" type="Node2D" parent="rows"]
-position = Vector2(1772, 203)
+[node name="ear" type="Node2D" parent="rows"]
+position = Vector2(1763, 794)
+script = ExtResource("15_6ld0b")
+group = "ear"
+max_poss = 700
+organ_distance = 90
+sprite_arrays = Array[Texture2D]([ExtResource("50_hwvd4"), ExtResource("51_vf24h"), ExtResource("52_iarvi"), ExtResource("53_rmw25"), ExtResource("54_rpcdt")])
+audio_array = Array[AudioStreamWAV]([ExtResource("20_jncb7"), ExtResource("31_8lxe4"), ExtResource("32_bwi52"), ExtResource("33_wu2xf"), ExtResource("34_kwvrg"), ExtResource("35_6se1p"), ExtResource("36_n6fxi"), ExtResource("23_g2lgv"), ExtResource("24_5hs6q"), ExtResource("25_ajlpb"), ExtResource("26_meglc"), ExtResource("27_sqto1"), ExtResource("28_2htv7"), ExtResource("29_fcru6"), ExtResource("34_iki54"), ExtResource("35_b3lej"), ExtResource("36_q6a51"), ExtResource("37_pljab"), ExtResource("38_xi8ty"), ExtResource("39_21ff3"), ExtResource("40_1bsew"), ExtResource("41_7txd3"), ExtResource("42_nwyp4"), ExtResource("43_5pjv1"), ExtResource("44_4771i"), ExtResource("45_iao1r"), ExtResource("46_mjall"), ExtResource("47_a7hlx"), ExtResource("48_wfjhn"), ExtResource("49_80opj")])
+
+[node name="ear2" type="Node2D" parent="rows"]
+position = Vector2(4146, 761)
+script = ExtResource("15_6ld0b")
+group = "ear"
+max_poss = 600
+change_value = 20
+organ_distance = 80
+sprite_arrays = Array[Texture2D]([ExtResource("50_hwvd4"), ExtResource("51_vf24h"), ExtResource("52_iarvi"), ExtResource("53_rmw25"), ExtResource("54_rpcdt")])
+audio_array = Array[AudioStreamWAV]([ExtResource("20_jncb7"), ExtResource("31_8lxe4"), ExtResource("32_bwi52"), ExtResource("33_wu2xf"), ExtResource("34_kwvrg"), ExtResource("35_6se1p"), ExtResource("36_n6fxi"), ExtResource("23_g2lgv"), ExtResource("24_5hs6q"), ExtResource("25_ajlpb"), ExtResource("26_meglc"), ExtResource("27_sqto1"), ExtResource("28_2htv7"), ExtResource("29_fcru6"), ExtResource("34_iki54"), ExtResource("35_b3lej"), ExtResource("36_q6a51"), ExtResource("37_pljab"), ExtResource("38_xi8ty"), ExtResource("39_21ff3"), ExtResource("40_1bsew"), ExtResource("41_7txd3"), ExtResource("42_nwyp4"), ExtResource("43_5pjv1"), ExtResource("44_4771i"), ExtResource("45_iao1r"), ExtResource("46_mjall"), ExtResource("47_a7hlx"), ExtResource("48_wfjhn"), ExtResource("49_80opj")])
+is_down = false
+
+[node name="hair" type="Node2D" parent="rows"]
+position = Vector2(6226, 1022)
+script = ExtResource("15_6ld0b")
+group = "hair"
+max_poss = 1600
+change_value = 30
+organ_count = 7
+organ_distance = 200
+sprite_arrays = Array[Texture2D]([ExtResource("84_b5bje"), ExtResource("85_s57vn"), ExtResource("86_pbhmo"), ExtResource("87_2cxjs"), ExtResource("88_ul7h3"), ExtResource("89_h0qwv"), ExtResource("90_jl8cr")])
+audio_array = Array[AudioStreamWAV]([ExtResource("20_jncb7"), ExtResource("31_8lxe4"), ExtResource("32_bwi52"), ExtResource("33_wu2xf"), ExtResource("34_kwvrg"), ExtResource("35_6se1p"), ExtResource("36_n6fxi"), ExtResource("23_g2lgv"), ExtResource("24_5hs6q"), ExtResource("25_ajlpb"), ExtResource("26_meglc"), ExtResource("27_sqto1"), ExtResource("28_2htv7"), ExtResource("29_fcru6"), ExtResource("34_iki54"), ExtResource("35_b3lej"), ExtResource("36_q6a51"), ExtResource("37_pljab"), ExtResource("38_xi8ty"), ExtResource("39_21ff3"), ExtResource("40_1bsew"), ExtResource("41_7txd3"), ExtResource("42_nwyp4"), ExtResource("43_5pjv1"), ExtResource("44_4771i"), ExtResource("45_iao1r"), ExtResource("46_mjall"), ExtResource("47_a7hlx"), ExtResource("48_wfjhn"), ExtResource("49_80opj")])
+
+[node name="head" type="Node2D" parent="rows"]
+position = Vector2(8573, 1452)
+script = ExtResource("15_6ld0b")
+group = "head"
+max_poss = 1400
+change_value = 30
+organ_count = 7
+organ_distance = 170
+sprite_arrays = Array[Texture2D]([ExtResource("51_kpw41"), ExtResource("99_1fn52"), ExtResource("100_t2uvg"), ExtResource("55_abjpf"), ExtResource("56_iut7g"), ExtResource("57_uqn12")])
+audio_array = Array[AudioStreamWAV]([ExtResource("20_jncb7"), ExtResource("31_8lxe4"), ExtResource("32_bwi52"), ExtResource("33_wu2xf"), ExtResource("34_kwvrg"), ExtResource("35_6se1p"), ExtResource("36_n6fxi"), ExtResource("23_g2lgv"), ExtResource("24_5hs6q"), ExtResource("25_ajlpb"), ExtResource("26_meglc"), ExtResource("27_sqto1"), ExtResource("28_2htv7"), ExtResource("29_fcru6"), ExtResource("34_iki54"), ExtResource("35_b3lej"), ExtResource("36_q6a51"), ExtResource("37_pljab"), ExtResource("38_xi8ty"), ExtResource("39_21ff3"), ExtResource("40_1bsew"), ExtResource("41_7txd3"), ExtResource("42_nwyp4"), ExtResource("43_5pjv1"), ExtResource("44_4771i"), ExtResource("45_iao1r"), ExtResource("46_mjall"), ExtResource("47_a7hlx"), ExtResource("48_wfjhn"), ExtResource("49_80opj")])
+is_down = false
+
+[node name="sibil" type="Node2D" parent="rows"]
+position = Vector2(10232, 1685)
+script = ExtResource("15_6ld0b")
+group = "sibil"
+max_poss = 600
+organ_count = 7
+organ_distance = 60
+sprite_arrays = Array[Texture2D]([ExtResource("91_c1niw"), ExtResource("92_7e6o5"), ExtResource("93_f6dqa"), ExtResource("94_jjpb2"), ExtResource("95_rrqur"), ExtResource("96_8xywx"), ExtResource("97_0ow1g")])
+audio_array = Array[AudioStreamWAV]([ExtResource("20_jncb7"), ExtResource("31_8lxe4"), ExtResource("32_bwi52"), ExtResource("33_wu2xf"), ExtResource("34_kwvrg"), ExtResource("35_6se1p"), ExtResource("36_n6fxi"), ExtResource("23_g2lgv"), ExtResource("24_5hs6q"), ExtResource("25_ajlpb"), ExtResource("26_meglc"), ExtResource("27_sqto1"), ExtResource("28_2htv7"), ExtResource("29_fcru6"), ExtResource("34_iki54"), ExtResource("35_b3lej"), ExtResource("36_q6a51"), ExtResource("37_pljab"), ExtResource("38_xi8ty"), ExtResource("39_21ff3"), ExtResource("40_1bsew"), ExtResource("41_7txd3"), ExtResource("42_nwyp4"), ExtResource("43_5pjv1"), ExtResource("44_4771i"), ExtResource("45_iao1r"), ExtResource("46_mjall"), ExtResource("47_a7hlx"), ExtResource("48_wfjhn"), ExtResource("49_80opj")])
+
+[node name="mounth" type="Node2D" parent="rows"]
+position = Vector2(12643, 1658)
+script = ExtResource("15_6ld0b")
+group = "mounth"
+max_poss = 900
+organ_count = 7
+organ_distance = 80
+sprite_arrays = Array[Texture2D]([ExtResource("55_7ty52"), ExtResource("56_iywge"), ExtResource("57_exqut"), ExtResource("58_4fglv"), ExtResource("59_kyice"), ExtResource("60_ukuf6"), ExtResource("61_6scw5"), ExtResource("62_0jnur"), ExtResource("63_tjpf7"), ExtResource("64_ftght"), ExtResource("65_lvkd3"), ExtResource("66_6u45j"), ExtResource("67_2aent"), ExtResource("68_t5f4h")])
+audio_array = Array[AudioStreamWAV]([ExtResource("20_jncb7"), ExtResource("31_8lxe4"), ExtResource("32_bwi52"), ExtResource("33_wu2xf"), ExtResource("34_kwvrg"), ExtResource("35_6se1p"), ExtResource("36_n6fxi"), ExtResource("23_g2lgv"), ExtResource("24_5hs6q"), ExtResource("25_ajlpb"), ExtResource("26_meglc"), ExtResource("27_sqto1"), ExtResource("28_2htv7"), ExtResource("29_fcru6"), ExtResource("34_iki54"), ExtResource("35_b3lej"), ExtResource("36_q6a51"), ExtResource("37_pljab"), ExtResource("38_xi8ty"), ExtResource("39_21ff3"), ExtResource("40_1bsew"), ExtResource("41_7txd3"), ExtResource("42_nwyp4"), ExtResource("43_5pjv1"), ExtResource("44_4771i"), ExtResource("45_iao1r"), ExtResource("46_mjall"), ExtResource("47_a7hlx"), ExtResource("48_wfjhn"), ExtResource("49_80opj")])
+is_down = false
+
+[node name="nose" type="Node2D" parent="rows"]
+position = Vector2(15665, 1283)
 script = ExtResource("15_6ld0b")
 group = "nose"
+max_poss = 600
 organ_count = 7
 organ_distance = 100
-sprite_arrays = Array[Texture2D]([ExtResource("16_lkfr8"), ExtResource("17_5t8t4"), ExtResource("18_x0rbq"), ExtResource("19_qod1j"), ExtResource("20_v4sae"), ExtResource("21_g0pu3"), ExtResource("22_vnfes")])
-audio_array = Array[AudioStreamWAV]([ExtResource("23_g2lgv"), ExtResource("24_5hs6q"), ExtResource("25_ajlpb"), ExtResource("26_meglc"), ExtResource("27_sqto1"), ExtResource("28_2htv7"), ExtResource("29_fcru6")])
+sprite_arrays = Array[Texture2D]([ExtResource("16_lkfr8"), ExtResource("17_5t8t4"), ExtResource("18_x0rbq"), ExtResource("19_qod1j"), ExtResource("20_v4sae"), ExtResource("21_g0pu3"), ExtResource("22_vnfes"), ExtResource("16_547j7"), ExtResource("17_1tk76"), ExtResource("18_elku8"), ExtResource("19_oixq3")])
+audio_array = Array[AudioStreamWAV]([ExtResource("20_jncb7"), ExtResource("31_8lxe4"), ExtResource("32_bwi52"), ExtResource("33_wu2xf"), ExtResource("34_kwvrg"), ExtResource("35_6se1p"), ExtResource("36_n6fxi"), ExtResource("23_g2lgv"), ExtResource("24_5hs6q"), ExtResource("25_ajlpb"), ExtResource("26_meglc"), ExtResource("27_sqto1"), ExtResource("28_2htv7"), ExtResource("29_fcru6"), ExtResource("34_iki54"), ExtResource("35_b3lej"), ExtResource("36_q6a51"), ExtResource("37_pljab"), ExtResource("38_xi8ty"), ExtResource("39_21ff3"), ExtResource("40_1bsew"), ExtResource("41_7txd3"), ExtResource("42_nwyp4"), ExtResource("43_5pjv1"), ExtResource("44_4771i"), ExtResource("45_iao1r"), ExtResource("46_mjall"), ExtResource("47_a7hlx"), ExtResource("48_wfjhn"), ExtResource("49_80opj")])
 
-[node name="OrgansRow2" type="Node2D" parent="rows"]
-position = Vector2(4323, 468)
+[node name="eye" type="Node2D" parent="rows"]
+position = Vector2(19250, 1369)
 script = ExtResource("15_6ld0b")
 group = "eye"
-sprite_arrays = Array[Texture2D]([ExtResource("23_nyyfk"), ExtResource("24_3qntf"), ExtResource("25_foytw"), ExtResource("26_r4804"), ExtResource("27_yg7hh"), ExtResource("28_7gja6"), ExtResource("29_oiy2h"), ExtResource("30_f8sb4")])
-audio_array = Array[AudioStreamWAV]([ExtResource("31_8lxe4"), ExtResource("32_bwi52"), ExtResource("33_wu2xf"), ExtResource("34_kwvrg"), ExtResource("35_6se1p"), ExtResource("36_n6fxi"), ExtResource("23_g2lgv"), ExtResource("24_5hs6q")])
+max_poss = 600
+change_value = 20
+organ_count = 7
+organ_distance = 200
+sprite_arrays = Array[Texture2D]([ExtResource("50_tinff"), ExtResource("51_j6huu"), ExtResource("52_uh51a"), ExtResource("53_bbkwc"), ExtResource("54_s6hym"), ExtResource("55_l85rm"), ExtResource("56_v2jhk"), ExtResource("57_ohhti"), ExtResource("58_d4ihd"), ExtResource("59_eom53"), ExtResource("60_a82nu"), ExtResource("61_8rdmn"), ExtResource("62_w5bj7"), ExtResource("63_hkt2y"), ExtResource("64_5p581")])
+audio_array = Array[AudioStreamWAV]([ExtResource("20_jncb7"), ExtResource("31_8lxe4"), ExtResource("32_bwi52"), ExtResource("33_wu2xf"), ExtResource("34_kwvrg"), ExtResource("35_6se1p"), ExtResource("36_n6fxi"), ExtResource("23_g2lgv"), ExtResource("24_5hs6q"), ExtResource("25_ajlpb"), ExtResource("26_meglc"), ExtResource("27_sqto1"), ExtResource("28_2htv7"), ExtResource("29_fcru6"), ExtResource("34_iki54"), ExtResource("35_b3lej"), ExtResource("36_q6a51"), ExtResource("37_pljab"), ExtResource("38_xi8ty"), ExtResource("39_21ff3"), ExtResource("40_1bsew"), ExtResource("41_7txd3"), ExtResource("42_nwyp4"), ExtResource("43_5pjv1"), ExtResource("44_4771i"), ExtResource("45_iao1r"), ExtResource("46_mjall"), ExtResource("47_a7hlx"), ExtResource("48_wfjhn"), ExtResource("49_80opj")])
+is_down = false
 
-[node name="OrgansRow3" type="Node2D" parent="rows"]
-position = Vector2(7767, 315)
+[node name="eye2" type="Node2D" parent="rows"]
+position = Vector2(21387, 1159)
 script = ExtResource("15_6ld0b")
 group = "eye"
-sprite_arrays = Array[Texture2D]([ExtResource("23_nyyfk"), ExtResource("24_3qntf"), ExtResource("25_foytw"), ExtResource("26_r4804"), ExtResource("27_yg7hh"), ExtResource("28_7gja6"), ExtResource("29_oiy2h"), ExtResource("30_f8sb4")])
-audio_array = Array[AudioStreamWAV]([ExtResource("31_8lxe4"), ExtResource("32_bwi52"), ExtResource("33_wu2xf"), ExtResource("34_kwvrg"), ExtResource("35_6se1p"), ExtResource("36_n6fxi"), ExtResource("23_g2lgv"), ExtResource("24_5hs6q")])
+max_poss = 600
+change_value = 15
+organ_count = 6
+organ_distance = 160
+sprite_arrays = Array[Texture2D]([ExtResource("50_tinff"), ExtResource("51_j6huu"), ExtResource("52_uh51a"), ExtResource("53_bbkwc"), ExtResource("54_s6hym"), ExtResource("55_l85rm"), ExtResource("56_v2jhk"), ExtResource("57_ohhti"), ExtResource("58_d4ihd"), ExtResource("59_eom53"), ExtResource("60_a82nu"), ExtResource("61_8rdmn"), ExtResource("62_w5bj7"), ExtResource("63_hkt2y"), ExtResource("64_5p581")])
+audio_array = Array[AudioStreamWAV]([ExtResource("20_jncb7"), ExtResource("31_8lxe4"), ExtResource("32_bwi52"), ExtResource("33_wu2xf"), ExtResource("34_kwvrg"), ExtResource("35_6se1p"), ExtResource("36_n6fxi"), ExtResource("23_g2lgv"), ExtResource("24_5hs6q"), ExtResource("25_ajlpb"), ExtResource("26_meglc"), ExtResource("27_sqto1"), ExtResource("28_2htv7"), ExtResource("29_fcru6"), ExtResource("34_iki54"), ExtResource("35_b3lej"), ExtResource("36_q6a51"), ExtResource("37_pljab"), ExtResource("38_xi8ty"), ExtResource("39_21ff3"), ExtResource("40_1bsew"), ExtResource("41_7txd3"), ExtResource("42_nwyp4"), ExtResource("43_5pjv1"), ExtResource("44_4771i"), ExtResource("45_iao1r"), ExtResource("46_mjall"), ExtResource("47_a7hlx"), ExtResource("48_wfjhn"), ExtResource("49_80opj")])
+
+[node name="win" type="Area2D" parent="."]
+position = Vector2(22145, 617)
+metadata/_edit_lock_ = true
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="win"]
+shape = SubResource("RectangleShape2D_64ev7")
+
+[node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("110_had3t")
+volume_db = 10.0
+autoplay = true
+
+[connection signal="body_entered" from="win" to="." method="_on_win"]

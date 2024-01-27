@@ -1,7 +1,7 @@
 [gd_scene load_steps=3 format=3 uid="uid://pqm8v1vty1hj"]
 
 [ext_resource type="Script" path="res://scripts/guid.gd" id="1_3so4q"]
-[ext_resource type="Texture2D" uid="uid://cpl2dnpolofgy" path="res://assets/graphics/guid.png" id="2_0qek6"]
+[ext_resource type="Texture2D" uid="uid://dyuj4jujbrwyb" path="res://assets/graphics/main.jpg" id="2_jyql2"]
 
 [node name="guid" type="CanvasLayer"]
 process_mode = 3
@@ -21,7 +21,7 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
-texture = ExtResource("2_0qek6")
+texture = ExtResource("2_jyql2")
 
 [node name="Button" type="Button" parent="."]
 anchors_preset = 3

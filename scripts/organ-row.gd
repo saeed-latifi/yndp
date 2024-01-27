@@ -1,7 +1,7 @@
 class_name OrgansRow
 extends Node2D
 
-@export_enum("nose", "head", "mounth","ear","eye") var group: String
+@export_enum("nose", "head", "mounth","ear","eye","sibil","hair") var group: String
 @export var min_poss : int = 0
 @export var max_poss  : int= 1000
 @export var change_value = 10
@@ -10,11 +10,11 @@ extends Node2D
 
 @export var sprite_arrays : Array[Texture2D]=[]
 @export var audio_array : Array[AudioStreamWAV]=[]
+@export var is_down = true
 
 var base_organ = preload("res://component/face/organ.tscn")
 
 
-var is_down = true
 var poss : = int((max_poss - min_poss)/2)
 
 var exist_organ_number = 0

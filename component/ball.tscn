@@ -1,50 +1,7 @@
 [gd_scene load_steps=4 format=3 uid="uid://da1pty63rplb7"]
 
 [ext_resource type="PackedScene" uid="uid://ipclp1m7q4l4" path="res://component/face/face.tscn" id="1_7xs2f"]
-
-[sub_resource type="GDScript" id="GDScript_fjldl"]
-script/source = "extends RigidBody2D
-
-@onready var rayCast = $RayCast2D
-
-var is_started = false
-
-func _process(_delta):
-	if rayCast.is_colliding():
-		is_started=true
-
-func _physics_process(delta):
-	if(rayCast.is_colliding()):
-		if Input.is_action_just_pressed(\"jump\") :
-			apply_central_impulse(Vector2(0,-1000))
-			
-		if linear_velocity.x < 750:
-			apply_central_impulse(Vector2(200,0))
-
-		if linear_velocity.x > 2000:
-			apply_central_impulse(Vector2(-200,0))
-
-	if Input.is_action_just_pressed(\"boost\") and linear_velocity.x < 1500 :
-		apply_central_impulse(Vector2(500,0))
-		print(\"boost\")
-
-	elif Input.is_action_just_pressed(\"breake\") and linear_velocity.x > 750 :
-		apply_central_impulse(Vector2(-750,0))
-		print(\"breake\")
-
-
-
-
-
-
-
-
-
-
-
-
-
-"
+[ext_resource type="Script" path="res://scripts/ball.gd" id="1_lf35n"]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_37bsd"]
 radius = 50.0
@@ -54,7 +11,7 @@ process_mode = 1
 y_sort_enabled = true
 collision_mask = 3
 lock_rotation = true
-script = SubResource("GDScript_fjldl")
+script = ExtResource("1_lf35n")
 
 [node name="Node2D" parent="." instance=ExtResource("1_7xs2f")]
 
