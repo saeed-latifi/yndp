@@ -54,15 +54,15 @@ theme_override_constants/separation = 50
 alignment = 1
 
 [node name="new_game" type="Button" parent="BoxContainer/VBoxContainer/HBoxContainer"]
-custom_minimum_size = Vector2(180, 80)
+custom_minimum_size = Vector2(350, 150)
 layout_mode = 2
-theme_override_font_sizes/font_size = 30
+theme_override_font_sizes/font_size = 50
 text = "new game"
 
 [node name="exit" type="Button" parent="BoxContainer/VBoxContainer/HBoxContainer"]
-custom_minimum_size = Vector2(180, 80)
+custom_minimum_size = Vector2(350, 0)
 layout_mode = 2
-theme_override_font_sizes/font_size = 30
+theme_override_font_sizes/font_size = 50
 text = "exit"
 
 [connection signal="pressed" from="BoxContainer/VBoxContainer/HBoxContainer/new_game" to="." method="_on_re_start_pressed"]

@@ -61,10 +61,10 @@ func add_eye(texture:Texture2D):
 	eye.position.y -= 50
 	
 	if eye_count == 0:		
+		eye.flip_h=true
 		eye.position.x += 50
 
 	elif eye_count==1:
-		eye.flip_h=true
 		eye.position.x -= 50
 
 	eye_count += 1
@@ -79,10 +79,10 @@ func add_ear(texture:Texture2D):
 	ear.position.y -= 60
 	
 	if era_count == 0:
+		ear.flip_h=true
 		ear.position.x += 100
 
 	elif era_count==1:
-		ear.flip_h=true
 		ear.position.x -= 90
 
 	era_count += 1

@@ -1,4 +1,4 @@
-[gd_scene load_steps=125 format=3 uid="uid://di6yxkbpwsgwe"]
+[gd_scene load_steps=124 format=3 uid="uid://di6yxkbpwsgwe"]
 
 [ext_resource type="Script" path="res://scripts/level.gd" id="1_uvert"]
 [ext_resource type="Texture2D" uid="uid://dqv57xbhfxig7" path="res://assets/graphics/environoment/lanscape.jpg" id="2_1gua5"]
@@ -10,7 +10,6 @@
 [ext_resource type="Texture2D" uid="uid://b2r2j6pnx01m4" path="res://assets/graphics/environoment/Eyes.png" id="8_uwj2i"]
 [ext_resource type="PackedScene" uid="uid://cd63ehuo0nbkl" path="res://component/ui/pause_menu.tscn" id="9_8mro1"]
 [ext_resource type="Texture2D" uid="uid://b10d0avqgf0vq" path="res://assets/graphics/environoment/Hair.png" id="10_4mca5"]
-[ext_resource type="PackedScene" uid="uid://cl3m5jj1joj8r" path="res://component/ui/lose.tscn" id="11_gset4"]
 [ext_resource type="Texture2D" uid="uid://cfreufj1x51uk" path="res://assets/graphics/environoment/Mustache.png" id="12_6kbq5"]
 [ext_resource type="PackedScene" uid="uid://b3lq6oajntcxi" path="res://component/ui/win.tscn" id="12_ah5pq"]
 [ext_resource type="Texture2D" uid="uid://cajole55cfcys" path="res://assets/graphics/environoment/Nose.png" id="13_j6vkv"]
@@ -145,8 +144,6 @@ texture = ExtResource("2_1gua5")
 [node name="HUD" parent="." instance=ExtResource("8_l1fam")]
 
 [node name="pause_menu" parent="." instance=ExtResource("9_8mro1")]
-
-[node name="lose_menu" parent="." instance=ExtResource("11_gset4")]
 
 [node name="win_menu" parent="." instance=ExtResource("12_ah5pq")]
 
@@ -311,12 +308,12 @@ stream = ExtResource("110_had3t")
 volume_db = -10.0
 autoplay = true
 
-[connection signal="pressed" from="HUD/VBoxContainer/HBoxContainer/brake/setting_button" to="character" method="_on_touch_brake"]
-[connection signal="pressed" from="HUD/VBoxContainer/HBoxContainer/brake/brake_key" to="character" method="_on_touch_brake"]
-[connection signal="pressed" from="HUD/VBoxContainer/HBoxContainer/jump/setting_button" to="character" method="_on_touch_jump"]
-[connection signal="pressed" from="HUD/VBoxContainer/HBoxContainer/jump/jump_key" to="character" method="_on_touch_jump"]
-[connection signal="pressed" from="HUD/VBoxContainer/HBoxContainer/PanelContainer2/TouchScreenButton" to="character" method="_on_touch_boost"]
-[connection signal="pressed" from="HUD/VBoxContainer/HBoxContainer/PanelContainer2/setting_button" to="character" method="_on_touch_boost"]
+[connection signal="pressed" from="HUD/VBoxContainer/HBoxContainer/PanelContainer3/boost/TouchScreenButton" to="character" method="_on_touch_boost"]
+[connection signal="pressed" from="HUD/VBoxContainer/HBoxContainer/PanelContainer3/boost/setting_button" to="character" method="_on_touch_boost"]
+[connection signal="pressed" from="HUD/VBoxContainer/HBoxContainer/PanelContainer3/brake/setting_button" to="character" method="_on_touch_brake"]
+[connection signal="pressed" from="HUD/VBoxContainer/HBoxContainer/PanelContainer3/brake/brake_key" to="character" method="_on_touch_brake"]
+[connection signal="pressed" from="HUD/VBoxContainer/HBoxContainer/PanelContainer/jump/setting_button" to="character" method="_on_touch_jump"]
+[connection signal="pressed" from="HUD/VBoxContainer/HBoxContainer/PanelContainer/jump/jump_key" to="character" method="_on_touch_jump"]
 [connection signal="body_entered" from="win" to="." method="_on_win"]
 
 [editable path="HUD"]

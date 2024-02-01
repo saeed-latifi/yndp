@@ -45,5 +45,3 @@ func _on_touch_jump():
 func _on_touch_boost():
 	if linear_velocity.x < 1500: on_boost()
 
-
-
